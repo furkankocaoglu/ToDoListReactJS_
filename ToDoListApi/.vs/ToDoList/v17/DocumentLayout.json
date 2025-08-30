@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kocao\\source\\repos\\ToDoList\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|c:\\users\\kocao\\source\\repos\\todolist\\todolist\\models\\gorev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\models\\gorev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|c:\\users\\kocao\\source\\repos\\todolist\\todolist\\models\\todolistentitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\models\\todolistentitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|c:\\users\\kocao\\source\\repos\\todolist\\todolist\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|c:\\users\\kocao\\source\\repos\\todolist\\todolist\\controllers\\gorevcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\controllers\\gorevcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|c:\\users\\kocao\\source\\repos\\todolist\\todolist\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7A4B5E0-8AB6-43B6-B089-764B304FC48F}|ToDoList\\ToDoList.csproj|solutionrelative:todolist\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GorevController.cs",
+              "DocumentMoniker": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\Controllers\\GorevController.cs",
+              "RelativeDocumentMoniker": "ToDoList\\Controllers\\GorevController.cs",
+              "ToolTip": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\Controllers\\GorevController.cs",
+              "RelativeToolTip": "ToDoList\\Controllers\\GorevController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T16:48:44.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gorev.cs",
+              "DocumentMoniker": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\Models\\Gorev.cs",
+              "RelativeDocumentMoniker": "ToDoList\\Models\\Gorev.cs",
+              "ToolTip": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\Models\\Gorev.cs",
+              "RelativeToolTip": "ToDoList\\Models\\Gorev.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T16:44:28.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "ToDoList\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "ToDoList\\Migrations\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T16:43:03.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "ToDoList\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "ToDoList\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T16:40:54.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ToDoListEntityModel.cs",
+              "DocumentMoniker": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\Models\\ToDoListEntityModel.cs",
+              "RelativeDocumentMoniker": "ToDoList\\Models\\ToDoListEntityModel.cs",
+              "ToolTip": "C:\\Users\\kocao\\source\\repos\\ToDoList\\ToDoList\\Models\\ToDoListEntityModel.cs",
+              "RelativeToolTip": "ToDoList\\Models\\ToDoListEntityModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T16:38:32.148Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
