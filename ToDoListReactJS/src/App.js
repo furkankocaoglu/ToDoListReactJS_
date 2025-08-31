@@ -5,6 +5,8 @@ import axios from 'axios';
 function App() {
   const [gorevler, setGorevler] = useState([]);
   const [yeniBaslik, setYeniBaslik] = useState('');
+  const [duzenlemeModu, setDuzenlemeModu] = useState(null);
+  const [duzenlenenBaslik, setDuzenlenenBaslik] = useState('');
 
   useEffect(() => {
     axios.get('https://localhost:44317/api/gorev')
@@ -15,7 +17,11 @@ function App() {
   const gorevEkle = () => {
     if (!yeniBaslik.trim()) return;
 
-    axios.post('https://localhost:44317/api/gorev', { Baslik: yeniBaslik, TamamlandiMi: false, OlusturmaTarihi: new Date() })
+    axios.post('https://localhost:44317/api/gorev', {
+      Baslik: yeniBaslik,
+      TamamlandiMi: false,
+      OlusturmaTarihi: new Date()
+    })
       .then(response => {
         setGorevler([response.data, ...gorevler]);
         setYeniBaslik('');
@@ -32,9 +38,28 @@ function App() {
   };
 
   const gorevToggle = (gorev) => {
-    axios.put(`https://localhost:44317/api/gorev/${gorev.ID}`, { ...gorev, TamamlandiMi: !gorev.TamamlandiMi })
+    axios.put(`https://localhost:44317/api/gorev/${gorev.ID}`, {
+      ...gorev,
+      TamamlandiMi: !gorev.TamamlandiMi
+    })
       .then(response => {
         setGorevler(gorevler.map(g => g.ID === gorev.ID ? response.data : g));
+      })
+      .catch(err => console.error(err));
+  };
+
+  const gorevGuncelle = (id) => {
+    const gorev = gorevler.find(g => g.ID === id);
+    if (!duzenlenenBaslik.trim()) return;
+
+    axios.put(`https://localhost:44317/api/gorev/${id}`, {
+      ...gorev,
+      Baslik: duzenlenenBaslik
+    })
+      .then(response => {
+        setGorevler(gorevler.map(g => g.ID === id ? response.data : g));
+        setDuzenlemeModu(null);
+        setDuzenlenenBaslik('');
       })
       .catch(err => console.error(err));
   };
@@ -52,6 +77,7 @@ function App() {
         />
         <button onClick={gorevEkle}>Ekle</button>
       </div>
+
       <div id="right-panel">
         <h2>Görevler</h2>
         <ul>
@@ -62,8 +88,41 @@ function App() {
                 checked={gorev.TamamlandiMi}
                 onChange={() => gorevToggle(gorev)}
               />
-              <span className={gorev.TamamlandiMi ? 'completed' : ''}>{gorev.Baslik}</span>
-              <button onClick={() => gorevSil(gorev.ID)}>Sil</button>
+
+              {duzenlemeModu === gorev.ID ? (
+                <>
+                  <input
+                    type="text"
+                    value={duzenlenenBaslik}
+                    onChange={e => setDuzenlenenBaslik(e.target.value)}
+                    onKeyDown={e => e.key === 'Enter' && gorevGuncelle(gorev.ID)}
+                    style={{ flexGrow: 1, marginLeft: 10, marginRight: 10 }}
+                  />
+                  <button
+                    onClick={() => gorevGuncelle(gorev.ID)}
+                    style={{ backgroundColor: '#28a745' }}
+                  >
+                    Kaydet
+                  </button>
+                  <button onClick={() => setDuzenlemeModu(null)}>İptal</button>
+                </>
+              ) : (
+                <>
+                  <span className={gorev.TamamlandiMi ? 'completed' : ''}>
+                    {gorev.Baslik}
+                  </span>
+                  <button
+                    onClick={() => {
+                      setDuzenlemeModu(gorev.ID);
+                      setDuzenlenenBaslik(gorev.Baslik);
+                    }}
+                    style={{ backgroundColor: '#ffc107' }}
+                  >
+                    Düzenle
+                  </button>
+                  <button onClick={() => gorevSil(gorev.ID)}>Sil</button>
+                </>
+              )}
             </li>
           ))}
         </ul>
